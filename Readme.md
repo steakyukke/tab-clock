@@ -9,7 +9,7 @@
 - 秒を目立たないように追加表示したい。
 
 ## 完成イメージ
-![Image from Gyazo](https://gyazo.com/ca5fc7914f43c04c34e700985861ff62/raw)
+[![Image from Gyazo](https://i.gyazo.com/76181581ca05a40b6e39ce3ff6332454.jpg)](https://gyazo.com/76181581ca05a40b6e39ce3ff6332454)
 
 - 秒を目立たないように追加表示する方法に少し悩みました。悩んだ末、アナログの秒針を小さく表示するようにしました。
 - 背景画像は[Unsplash](https://unsplash.com/) から自分が好きな画像を選びました。
