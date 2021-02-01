@@ -25,34 +25,33 @@ function showBackgroundImage() {
 
 // デジタル時計の表示
 function showClock() {
-  const weeks = new Array('Sun', 'Mon', 'Thu', 'Wed', 'Thr', 'Fri', 'Sat');
+  const weeks = ['Sun', 'Mon', 'Thu', 'Wed', 'Thr', 'Fri', 'Sat'];
   const now = new Date();
-  let y = now.getFullYear();
-  let mo = now.getMonth() + 1;
-  let d = now.getDate();
-  let w = weeks[now.getDay()];
-  let h = now.getHours();
-  let mi = now.getMinutes();
-  let s = now.getSeconds();
+  let year = now.getFullYear();
+  let month = now.getMonth() + 1;
+  let day = now.getDate();
+  let week = weeks[now.getDay()];
+  let hour = now.getHours();
+  let min = now.getMinutes();
+  let sec = now.getSeconds();
 
-  // 時刻表示用にゼロ埋め
-  if (mo < 10) mo = '0' + mo;
-  if (d < 10) d = '0' + d;
-  if (mi < 10) mi = '0' + mi;
+  // 表示用文字列作成
+  const date = `${year}/${('0' + month).slice(-2)}/${('0' + day).slice(-2)} (${week})`;
+  const time = `${('0' + hour).slice(-2)}:${('0' + min).slice(-2)}`;
 
   // 日付・時刻表示
-  document.getElementById('d-clock_date').innerHTML = y + '/' + mo + '/' + d + ' (' + w + ')';
-  document.getElementById('time').innerHTML = h + ':' + mi;
-  document.getElementById('d-clock').style.fontSize = window.innerWidth / 10 + 'px';
-  showAnalogClockSecond(s);
+  document.getElementById('d-clock_date').innerHTML = date;
+  document.getElementById('time').innerHTML = time;
+  document.getElementById('d-clock').style.fontSize = `${window.innerWidth / 10}px`;
+  showAnalogClockSecond(sec);
 
   // タイトル変更
-  document.title = h + ':' + mi;
+  document.title = time;
 }
 
 // アナログ時計(秒針のみ)の表示
-function showAnalogClockSecond(s) {
-  const degS = s * (360 / 60);
+function showAnalogClockSecond(sec) {
+  const degS = sec * (360 / 60);
   const elS = document.getElementById('a-clock-sec');
   elS.style.transform = `rotate(${degS}deg)`;
 }
