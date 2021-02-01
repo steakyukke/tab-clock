@@ -1,6 +1,6 @@
 // 背景画像の表示
 function showBackgroundImage() {
-  var url = [
+  const url = [
     'https://images.unsplash.com/photo-1527267207156-3372670819dc?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2002&q=80',
     'https://images.unsplash.com/photo-1538970272646-f61fabb3a8a2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2141&q=80',
     'https://images.unsplash.com/photo-1560625693-36619f571dca?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2688&q=80',
@@ -17,33 +17,37 @@ function showBackgroundImage() {
     'https://images.unsplash.com/photo-1558104676-514f67db17b4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80',
   ];
 
-  var randomIndex = Math.floor(Math.random() * url.length);
+  const randomIndex = Math.floor(Math.random() * url.length);
   console.log('randomIndex:' + randomIndex);
-  var el = document.getElementById('bg');
+  const el = document.getElementById('bg');
   el.style.backgroundImage = 'url(' + url[randomIndex] + ')';
 }
 
 // デジタル時計の表示
 function showClock() {
-  var weeks = new Array('Sun', 'Mon', 'Thu', 'Wed', 'Thr', 'Fri', 'Sat');
-  var now = new Date();
-  var y = now.getFullYear();
-  var mo = now.getMonth() + 1;
-  var d = now.getDate();
-  var w = weeks[now.getDay()];
-  var h = now.getHours();
-  var mi = now.getMinutes();
-  var s = now.getSeconds();
+  const weeks = new Array('Sun', 'Mon', 'Thu', 'Wed', 'Thr', 'Fri', 'Sat');
+  const now = new Date();
+  let y = now.getFullYear();
+  let mo = now.getMonth() + 1;
+  let d = now.getDate();
+  let w = weeks[now.getDay()];
+  let h = now.getHours();
+  let mi = now.getMinutes();
+  let s = now.getSeconds();
 
+  // 時刻表示用にゼロ埋め
   if (mo < 10) mo = '0' + mo;
   if (d < 10) d = '0' + d;
   if (mi < 10) mi = '0' + mi;
 
+  // 日付・時刻表示
   document.getElementById('d-clock_date').innerHTML = y + '/' + mo + '/' + d + ' (' + w + ')';
   document.getElementById('time').innerHTML = h + ':' + mi;
   document.getElementById('d-clock').style.fontSize = window.innerWidth / 10 + 'px';
-
   showAnalogClockSecond(s);
+
+  // タイトル変更
+  document.title = h + ':' + mi;
 }
 
 // アナログ時計(秒針のみ)の表示
