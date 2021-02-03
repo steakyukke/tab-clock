@@ -22,3 +22,5 @@
   - Chromeウェブストア → [New Tab Redirect](https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna/related)
   - 使い方記事→[Google Chrome - 新しいタブにアプリ一覧を表示 - 拡張機能「New Tab Redirect」 - PC設定のカルマ](https://pc-karuma.net/google-chrome-new-tab-app-list/)
 
+## カスタマイズ方法
+- main.jsのurlの配列に好きな画像のパスを指定してもらうと、好きな背景画像に変更できます。
