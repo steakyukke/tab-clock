@@ -27,6 +27,26 @@ function showBackgroundImage() {
     'https://images.unsplash.com/photo-1563842740060-55bea0187b84?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=3300&q=80',
     'https://images.unsplash.com/photo-1454238554694-bb0049b8dc5a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80',
     'https://images.unsplash.com/photo-1460647847717-b1b1fa4f1092?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3072&q=80',
+    // --- 以下、自然・水・建築の落ち着いた色調の画像 ---
+    'https://unsplash.com/photos/YFFGkE3y4F8/download?w=2400', // ドロミテ湖に映る雪山
+    'https://unsplash.com/photos/Bkci_8qcdvQ/download?w=2400', // 雪を頂いた山々と谷と森林
+    'https://unsplash.com/photos/XexawgzYOBc/download?w=2400', // 澄んだ青い水域
+    'https://unsplash.com/photos/_AjqGGafofE/download?w=2400', // 白いクラゲが泳ぐ
+    'https://unsplash.com/photos/RVX2STx44UI/download?w=2400', // 泡立ちを伴う荒れた海の波
+    'https://unsplash.com/photos/f4bfvVXKZP8/download?w=2400', // 青く澄んだ水の下の灰色の砂
+    'https://unsplash.com/photos/k7rZ8wTfABA/download?w=2400', // 水中写真
+    'https://unsplash.com/photos/yqIFxfERlpU/download?w=2400', // 青と白のウォータースプラッシュ
+    'https://unsplash.com/photos/QURU8IY-RaI/download?w=2400', // 青い水の写真
+    'https://unsplash.com/photos/m_uSWBJWr0s/download?w=2400', // 水域のそばの緑と灰色の岩層
+    'https://unsplash.com/photos/1XLyzi17Z2M/download?w=2400', // 島の近くでヨットセーリング
+    'https://unsplash.com/photos/UtBZXP5szPs/download?w=2400', // 草が茂った丘の上に沈む太陽
+    'https://unsplash.com/photos/1EYMue_AwDw/download?w=2400', // 緑の松の木の近くの木製の海のドック
+    'https://unsplash.com/photos/wpU4veNGnHg/download?w=2400', // 高層ビル都市景観
+    'https://unsplash.com/photos/Nyvq2juw4_o/download?w=2400', // 昼間の白と茶色の街の建物
+    'https://unsplash.com/photos/PVKn9G3XICQ/download?w=2400', // ビルを見上げるワームの目線
+    'https://unsplash.com/photos/vLN225oj0ck/download?w=2400', // ガラス窓の建物
+    'https://unsplash.com/photos/f9bcOaV5zbU/download?w=2400', // フランクフルトの近代的な銀行塔
+    'https://unsplash.com/photos/7dlhIfk6bYM/download?w=2400', // 高層ビルの隣の川を下るボート
   ];
 
   const randomIndex = Math.floor(Math.random() * url.length);
