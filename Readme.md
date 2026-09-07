@@ -24,6 +24,5 @@
 
 ## カスタマイズ方法
 - main.jsのurlの配列に好きな画像のパスを指定してもらうと、好きな背景画像に変更できます。
-- Unsplashの画像は下記2通りの指定ができます。
-  - 画像を右クリック →「画像アドレスをコピー」で得られる `https://images.unsplash.com/photo-xxxx?...` 形式
-  - 写真ページURL末尾の写真IDを使った `https://unsplash.com/photos/<写真ID>/download?w=2400` 形式（画像URLへリダイレクトされます）
+- Unsplashの画像URLは、画像を右クリック →「画像アドレスをコピー」で取得できます（`https://images.unsplash.com/photo-xxxx?...` 形式）。
+- 背景には `rgba(0, 0, 0, 0.25)` の暗幕を重ねています（main.cssの `#bg::before`）。明るい画像でも白文字の時計が読めるようにするためなので、濃さはお好みで調整してください。
