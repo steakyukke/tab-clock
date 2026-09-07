@@ -27,6 +27,26 @@ function showBackgroundImage() {
     'https://images.unsplash.com/photo-1563842740060-55bea0187b84?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=3300&q=80',
     'https://images.unsplash.com/photo-1454238554694-bb0049b8dc5a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80',
     'https://images.unsplash.com/photo-1460647847717-b1b1fa4f1092?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3072&q=80',
+    // --- 以下、自然・水・建築の落ち着いた色調の画像 ---
+    'https://images.unsplash.com/photo-1480497490787-505ec076689f?auto=format&fit=crop&w=2500&q=80', // ドロミテ湖に映る雪山
+    'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2500&q=80', // 雪を頂いた山々と谷と森林
+    'https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=2500&q=80', // 澄んだ青い水域
+    'https://images.unsplash.com/photo-1495012379376-194a416fcc5f?auto=format&fit=crop&w=2500&q=80', // 白いクラゲが泳ぐ
+    'https://images.unsplash.com/photo-1550757750-4ce187a65014?auto=format&fit=crop&w=2500&q=80', // 泡立ちを伴う荒れた海の波
+    'https://images.unsplash.com/photo-1559825477-6f38d6332bb6?auto=format&fit=crop&w=2500&q=80', // 青く澄んだ水の下の灰色の砂
+    'https://images.unsplash.com/photo-1465634836201-1d5651b9b6d6?auto=format&fit=crop&w=2500&q=80', // 水中写真
+    'https://images.unsplash.com/photo-1583030225577-329fe6cc80d6?auto=format&fit=crop&w=2500&q=80', // 青と白のウォータースプラッシュ
+    'https://images.unsplash.com/photo-1549074862-6173e20d02a8?auto=format&fit=crop&w=2500&q=80', // 青い水の写真
+    'https://images.unsplash.com/photo-1621847468516-1ed5d0df56fe?auto=format&fit=crop&w=2500&q=80', // 水域のそばの緑と灰色の岩層
+    'https://images.unsplash.com/photo-1541410965313-d53b3c16ef17?auto=format&fit=crop&w=2500&q=80', // 島の近くでヨットセーリング
+    'https://plus.unsplash.com/premium_photo-1677347335105-1bd16607a25e?auto=format&fit=crop&w=2500&q=80', // 草が茂った丘の上に沈む太陽
+    'https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=2500&q=80', // 緑の松の木の近くの木製の海のドック
+    'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=2500&q=80', // 高層ビル都市景観
+    'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=2500&q=80', // 昼間の白と茶色の街の建物
+    'https://images.unsplash.com/photo-1504119089809-1d5100a33f27?auto=format&fit=crop&w=2500&q=80', // ビルを見上げるワームの目線
+    'https://images.unsplash.com/photo-1550510537-89d5433de5cb?auto=format&fit=crop&w=2500&q=80', // ガラス窓の建物
+    'https://plus.unsplash.com/premium_photo-1725408023469-d0659e7f3545?auto=format&fit=crop&w=2500&q=80', // フランクフルトの近代的な銀行塔
+    'https://images.unsplash.com/photo-1634043858159-113e50b6560b?auto=format&fit=crop&w=2500&q=80', // 高層ビルの隣の川を下るボート
   ];
 
   const randomIndex = Math.floor(Math.random() * url.length);
